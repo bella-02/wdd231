@@ -3,9 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD231 course homepage">
+    <meta name="author" content="Bella Hunt">
     <title>WDD 231</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <script type="module" src="scripts/home.js" defer></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Domine:wght@400..700&display=swap');
+    </style>
+
 </head>
+
 <body>
-    
+    <header>
+        <div class="title">
+            <img class="myPhoto" src="images/myphoto.jpg" alt="photo of bella hunt">
+            <h1 class="name">Bella Hunt</h1>
+        </div>
+
+        <button class="menuButton">☰</button>
+        <nav>
+                <a href="index.html">Home</a>
+                <a href="#">Chamber</a>
+                <a href="https://github.com/bella-02">GitHub Profile</a>
+                <a href="www.linkedin.com/in/bella-hunt-556a231bb">LinkedIn</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="courseWork">
+            <h2>Course Work</h2>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+
+        <section class="location">
+            <h3>Rexburg, Idaho</h3>
+            <img class="locationPhoto" src="images/rexburgphoto.jpg" alt="photo of rexburg idaho">
+            <p>Rexburg, Idaho</p>
+        </section>
+        <section class="certificateSection">
+            <h4>Web and Computer Programming Certificate</h4>
+            <div class="certificates">
+                <button id="showAll">All</button>
+                <button id="showCSE">CSE</button>
+                <button id="showWDD">WDD</button>
+            </div>
+            <div id="courseContainer"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>©<span id="currentYear"></span> Bella Hunt, Idaho</p>
+        <p id="lastModified"></p>
+    </footer>
+
 </body>
 </html>

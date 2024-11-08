@@ -1,0 +1,235 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Body */
+body {
+    font-family: "domine", serif;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* Header */
+header {
+    background-color: #3B5768;
+    color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+}
+
+.myPhoto {
+    width: 150px;
+    height: 175px;
+    border-radius: 5px;
+    margin: 20px;
+    object-fit: cover;
+
+
+}
+
+.name {
+    font-size: 3.5rem;
+    font-family: "caveat", sans-serif;
+    letter-spacing: .1em;
+}
+
+.menuButton {
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 2em;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+nav {
+
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 25px;
+    font-size: 1.2em;
+    background-color: #162127;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+
+nav a:hover {
+    color: #BBBEDD;
+}
+
+/* Main Section */
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 25px;
+    width: 95%;
+    margin: 20px;
+}
+
+section {
+    background-color: white;
+    border-radius: 5px;
+    width: 100%;
+    text-align: center;
+}
+
+.courseWork {
+    grid-column: span 2;
+
+}
+
+.courseWork ul {
+    padding-left: 30px;
+    line-height: 2em;
+}
+.certificateSection {
+    grid-column:span 3;
+}
+
+.locationPhoto {
+    width: 100%;
+    padding: 15px;
+}
+
+.location p {
+    padding-bottom: 10px;
+}
+
+section h2,
+section h3,
+section h4 {
+    background-color: #BBBEDD;
+    color: black;
+    padding: 8px;
+    border-radius: 5px 5px 0 0;
+    font-size: 1.2em;
+}
+
+
+
+
+/* Certificate Buttons */
+.certificates {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    padding: 10px;
+}
+
+.certificates button {
+    background-color: #3B5768;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.certificates button:hover {
+    background-color: black;
+}
+
+/* Course Cards */
+#courseContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#courseContainer p {
+    grid-column: 2 / 2;
+    padding-bottom: 10px;
+}
+
+.certificates {
+    border-bottom: 1px solid #ddd;
+}
+.courseCard {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+
+
+/* Footer */
+footer {
+    width: 100%;
+    background-color: #2f4f66;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer p#lastModified {
+    font-size: 0.8em;
+}
+
+/* Flag Image */
+footer img {
+    width: 20px;
+    height: auto;
+    margin-left: 10px;
+}
+
+@media (max-width: 500px) {
+    nav {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav.active {
+        display: flex;
+    }
+
+    nav a {
+        padding: 10px;
+    }
+
+    .menuButton {
+        display: block;
+
+    }
+
+    main {
+        display: block;
+    }
+
+    section {
+        margin-bottom: 20px;
+    }
+
+    #courseContainer {
+        display: block;
+    }
+
+}
