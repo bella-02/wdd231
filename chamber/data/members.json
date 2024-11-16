@@ -1,0 +1,72 @@
+[
+    {
+        "name": "Fat Cats of Rexburg",
+        "address":"475 North 2nd East, Rexburg, ID 83440",
+        "phone":"(208) 359-2600",
+        "website":"https://www.fatcatsfun.com/",
+        "image":"images/fatcats-logo.jpg",
+        "membership_level": 3,
+        "description":"Entertainment center"
+
+    },
+
+    {
+        "name":"Casa De Ochoa" ,
+        "address": "383 South 2nd West, Suite B, Rexburg, ID 83440",
+        "phone": "(208) 357-4250",
+        "website": "https://www.casadeochoa.com/",
+        "image":"images/casadeochoa-logo.jpg",
+        "membership_level": 1,
+        "description": "Mexican restaurant"
+    },
+
+    {
+        "name":"Rexburg Orthodontics" ,
+        "address": "374 East 4th North, Rexburg, ID 83440",
+        "phone": "(208) 356-3621",
+        "website": "https://www.rexburgbraces.com/",
+        "image": "images/rexburgortho-logo.png",
+        "membership_level": 2,
+        "description": "Orthodontist"
+    },
+
+    {
+        "name": "Paul Mitchell the School",
+        "address":"557 Mariah Avenue, Rexburg, ID 83440" ,
+        "phone": "(208) 701-2617",
+        "website": "https://paulmitchell.edu/rexburg",
+        "image": "images/paulmitchell-logo.jpg",
+        "membership_level": 1,
+        "description":"Beauty school"
+    },
+
+    {
+        "name": "Alpine Jewelers",
+        "address": "5 West Main Street, Rexburg, Idaho 83440",
+        "phone":"(208) 359 9776" ,
+        "website": "https://www.alpinejewelers.com/",
+        "image": "images/alpinejewelers-logo.png",
+        "membership_level": 3,
+        "description":"Jeweler"
+    },
+
+    {
+        "name":"Madison Women's Clinic" ,
+        "address": "15 Madison Professional Park, Rexburg, Idaho 83440",
+        "phone": "(208) 356-6185",
+        "website":"https://www.madisonwomensclinic.com" ,
+        "image": "images/madisonwomens-logo.png",
+        "membership_level": 3,
+        "description":"Obstetrician-gynecologist"
+    },
+
+    {
+        "name": "Fixxology Rexburg",
+        "address": "50 South 2nd West, Rexburg 83440",
+        "phone": "(208) 932-1134",
+        "website": "https://fixxologydrinks.com/",
+        "image": "images/fixxology-logo.png",
+        "membership_level": 2,
+        "description": "Specialty soda shop"
+    }
+]
