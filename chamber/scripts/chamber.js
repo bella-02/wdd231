@@ -1,4 +1,4 @@
-
+//Directory Page, including headers and footers
 document.addEventListener('DOMContentLoaded', () => {
     const membersContainer = document.getElementById('members');
     const gridViewButton = document.getElementById('grid-view-button');
@@ -7,10 +7,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     async function fetchMembers() {
 
-            const response = await fetch('./data/members.json');
-            const members = await response.json();
-            displayMembers(members, 'grid');
- 
+        const response = await fetch('./data/members.json');
+        const members = await response.json();
+        displayMembers(members, 'grid');
+        spotlightSection(members);
+
     }
 
     function displayMembers(members, viewType) {
@@ -33,28 +34,19 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    function getMembershipLevel(level) {
-        switch (level) {
-            case 1: return 'Member';
-            case 2: return 'Silver';
-            case 3: return 'Gold';
-            default: return 'Unknown';
-        }
-    }
 
-   
-    gridViewButton.addEventListener('click', () => {
+
+    gridViewButton.addEventListener("click", () => {
         membersContainer.classList.remove('list');
         membersContainer.classList.add('grid');
     });
 
-    
-    listViewButton.addEventListener('click', () => {
+
+    listViewButton.addEventListener("click", () => {
         membersContainer.classList.remove('grid');
         membersContainer.classList.add('list');
     });
 
-    
     fetchMembers();
 
     lastModifiedElement.textContent = `Last Update: ${document.lastModified}`;
@@ -63,6 +55,3 @@ document.addEventListener('DOMContentLoaded', () => {
 document.querySelector(".menu-button").addEventListener("click", () => {
     document.querySelector("nav").classList.toggle("active");
 });
-
-
-

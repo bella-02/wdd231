@@ -1,15 +1,26 @@
 
+:root {
+    /* change the values below to your colors from your palette */
+    --primary-color: #658DB8;
+    --secondary-color: #77AD86;
+    --accent1-color: #17183B;
+    --accent2-color: white;
+
+    --heading-font: "Comfortaa", sans-serif;
+    --paragraph-font: "Nunito", sans-serif;
+}
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Nunito", sans-serif;
+    font-family: var(--paragraph-font);
 }
 
 body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    color: var(--accent1-color);
 }
 
 
@@ -17,9 +28,9 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    background-color: #658DB8;
+    background-color: var(--primary-color);
     padding: 20px;
-    border-bottom: 1px solid #17183B;
+    border-bottom: 1px solid var(--accent1-color);
 }
 
 #title-container{
@@ -38,20 +49,20 @@ header {
     font-size: 2.5em;
     font-weight: bold;
     color: white;
-    font-family: "Comfortaa", sans-serif;
+    font-family: var(--heading-font);
 }
 
 #title span {
     font-size: 1em;
-    color: #17183B;
+    color: var(--accent1-color);
 }
 
 .menu-button {
     display: none;
     position: absolute;
-    top: 30px;
-    right: 50px;
-    font-size: 4em;
+    top: 25px;
+    right: 15px;
+    font-size: 3em;
     background: none;
     border: none;
     color: black;
@@ -72,8 +83,212 @@ nav a {
 
 
 nav a:hover {
-    color: #17183B;
+    color: var(--accent1-color);
 }
+
+/* Home Page Start */
+
+/* Hero */
+ #hero {
+     display: grid;
+     grid-template-columns: 1fr 3fr 1fr;
+ }
+
+ #hero-box {
+     grid-column: 1/4;
+     grid-row: 1/3;
+     z-index: -1;
+ }
+
+ #hero-img {
+     width: 100%;
+ }
+
+ #hero-msg h2,
+ #hero-msg p {
+     text-align: center;
+     color: white;
+ }
+
+#hero-msg h2 {
+    font-family: var(--heading-font);
+    font-size: 2.5em;
+    padding-bottom: 10px;
+}
+ #hero-msg p {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+ }
+
+ #hero-msg {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    background-color: rgba(119, 173, 134, .9);
+    padding: 40px;
+    border-radius: 5px;
+    grid-row: 2/3;
+    margin-bottom: 70px;
+ }
+
+ .button-box {
+     text-align: center;
+ }
+
+
+ .join {
+     background-color: var(--primary-color);
+     color: white;
+     text-decoration: none;
+     font-size: 18px;
+     padding: 15px 30px;
+     border-radius: 5px;
+ }
+
+
+ .join:hover {
+     background-color: var(--accent1-color);
+     color: white;
+ }
+
+ /* Main */
+
+main {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#home {
+    font-family: var(--heading-font);
+    font-size: 1.5em;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: var(--accent1-color);
+}
+
+.main-section {
+    border: solid 1px var(--accent1-color);
+    border-radius: 10px;
+}
+
+.section-title {
+    font-size: 1em;
+    font-family: var(--heading-font);
+    border-bottom: solid 1px var(--accent1-color);
+    padding: 5px;
+    margin: 5px;
+    color: var(--primary-color);
+}
+
+#home-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+/*Current Events */
+
+#current-events-content {
+    margin-left: 30px;
+    margin-right: 20px;
+    padding-top: 20px;
+}
+
+#current-events-content li {
+    padding-bottom: 15px;
+    font-size: 1.2em;
+}
+
+/* Weather */
+
+#current-weather-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#current-temp {
+    padding: 10px;
+    font-size: 1.8em;
+    color: var(--accent1-color);
+
+}
+
+#forecast-temp {
+    font-size: 1.5em;
+    padding: 10px;
+    color: var(--accent1-color);
+}
+/* Spotlights */
+
+#spotlights {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    margin: 20px auto;
+    max-width: 1400px;
+}
+
+.spotlight-card {
+    border: 1px solid var(--accent1-color);
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+
+#spotlight-name {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: var(--primary-color);
+}
+
+
+#spotlight-description {
+    font-size: 1em;
+    color: var(--accent1-color);
+    margin-bottom: 15px;
+    border-bottom: 1px solid var(--accent1-color);
+    padding-bottom: 10px;
+}
+
+.spotlight-img-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px auto;
+    height: 120px;
+    overflow: hidden;
+}
+
+.spotlight-img-box img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 5px;
+}
+
+.spotlight-info {
+    font-size: 0.9em;
+    margin: 5px 0;
+    line-height: 1.5;
+}
+
+.spotlight-info a {
+    color: var(--accent1-color);
+    text-decoration: none;
+}
+
+.spotlight-info a:hover {
+    text-decoration: underline;
+}
+
+
+
+/* Directory Page Start */
 
 /* Main */
 
@@ -154,18 +369,20 @@ nav a:hover {
 }
 
 .list .member-card:nth-child(odd), .list .member-card:nth-child(odd) a {
-    background-color: #577559;
+    background-color: var(--secondary-color);
     color: white;
 }
 
+/* Directory Page end */
+
 /* Footer */
 footer {
-    background-color: #658DB8;
+    background-color: var(--primary-color);
     padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-top: 1px solid #17183B;
+    border-top: 1px solid var(--accent1-color);
 }
 
 .chamber-info, .personal-info {
@@ -189,14 +406,40 @@ footer {
 /* Responsive adjustments */
 
 @media (max-width: 1100px) {
+    
+    /* Directory */
     .grid {
         grid-template-columns: 1fr 1fr;
     }
 }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #spotlights {
+        grid-template-columns: 1fr 1fr;
+        /* Two cards per row */
+    }
+}
+
 @media (max-width: 700px) {
 
+    /* Directory */
     header {
         display: block;
+    }
+
+    #title-container img {
+    height: auto;
+    margin-left: 30px;
+    }
+
+    #title h1 {
+        font-size: 2em;
+    }
+
+    #title span {
+        font-size: 1em;
+        color: var(--accent1-color);
     }
 
     .menu-button {
@@ -214,6 +457,8 @@ footer {
         display: flex;
     }
 
+
+
     .grid {
         grid-template-columns: 1fr;
     }
@@ -222,13 +467,69 @@ footer {
         grid-template-columns: 1fr;
     }
 
+    
+}
+
+@media (max-width: 640px) {
     footer {
-        align-items: flex-start;
+        display: block;
     }
 
-    footer .personal-info {
+    .social-icons {
+        justify-content: center;
+        align-content: center;
+    }
+
+    #home-grid {
+        display: block;
+    }
+
+    #current-weather {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .chamber-info, .personal-info, .social-icons {
+        padding: 10px;
         text-align: center;
     }
 
-    
+    #spotlights {
+        grid-template-columns: 1fr;
+
+    }
+
+#hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#hero-box {
+    grid-column: 1/-1;
+}
+
+#hero-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+#hero-msg {
+    width: 90%;
+    margin: 10px auto;
+    padding: 20px;
+}
+
+#hero-msg h2 {
+    font-size: 1.8em;
+}
+
+#hero-msg p {
+    font-size: 1em;
+}
+
+.button-box {
+    margin-top: 15px;
+}
 }

@@ -1,24 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Directory Bella Hunt</title>
-    <meta name="description" content="Rexburg Chamber of Commerce directory">
+    <title>Rexburg Chamber of Commerce Bella Hunt</title>
+    <meta name="description" content="Rexburg Chamber of Commerce home page">
     <meta name="author" content="Bella Hunt">
-    <meta property="og:title" content="Chamber of Commerce Directory Bella Hunt">
+    <meta property="og:title" content="Rexburg Chamber of Commerce Bella Hunt">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://bella-02.github.io/wdd231/chamber/images/logo.png">
-    <meta property="og:url" content="https://bella-02.github.io/wdd231/chamber/directory.html">
+    <meta property="og:url" content="https://bella-02.github.io/wdd231/chamber/index.html">
     <link rel="icon" href="favicon.png">
     <link rel="stylesheet" href="styles/chamber.css">
-    <script type="module" src="scripts/chamber.js"></script>
+    <script type="module" src="scripts/home.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
         rel="stylesheet">
 </head>
+
 <body>
     <header>
         <div id="title-container">
@@ -39,11 +41,54 @@
     </header>
 
     <main>
-        <div id="view-buttons">
-            <button id="grid-view-button"><img src="images/grid-icon.png" alt="grid icon"></button>
-            <button id="list-view-button"><img src="images/lines-icon.png" alt="list icon"></button>
+        <div id="hero">
+            <div id="hero-box">
+                <img id="hero-img" src="images/hero.jpg" alt="People with arms around each other">
+            </div>
+            <section id="hero-msg">
+                <h2 id="welcome">Welcome to Rexburg!</h2>
+                <p id="call-to-action">Have a Business?</p>
+                <div class="button-box">
+                    <a class="join" href="">Join Now</a>
+                </div>
+            </section>
         </div>
-        <div id="members" class="grid"></div>
+
+        <h3 id="home">Home</h3>
+
+        <div id="home-grid">
+            <section class= "main-section" id="current-events">
+                <h4 class="section-title">Events</h4>
+                <ul id="current-events-content">
+                    <li>Lorem ipsum odor amet - Date</li>
+                    <li>Lorem ipsum odor amet - Date</li>
+                    <li>Lorem ipsum odor amet - Date</li>
+                    
+                </ul>
+            </section>
+            <section class= "main-section" id="current-weather">
+                <h5 class="section-title">Current Weather</h5>
+                <div id="current-weather-container">
+                    <figure>
+                        <img id="weather-icon" src="" alt="">
+                        <figcaption></figcaption>
+                    </figure>
+                    <p id="current-temp"></p>
+                </div>
+
+            </section>
+            <section class= "main-section" id="weather-forecast">
+                <h6 class="section-title">Weather Forecast</h6>
+                <div id="forecast">
+
+                </div>
+            </section>
+        </div>
+
+        <section id="spotlights">
+            <p>Spotlights</p>
+        </section>
+        
     </main>
 
     <footer>
@@ -68,6 +113,7 @@
             <p id="last-modified"></p>
         </div>
     </footer>
-    
+
 </body>
+
 </html>
