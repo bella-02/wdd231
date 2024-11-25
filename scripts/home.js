@@ -10,6 +10,8 @@ document.querySelector(".menuButton").addEventListener("click", () => {
 const certificateSection = document.querySelector('.certificateSection');
 const currentYearElement = document.getElementById("currentYear");
 const lastModifiedElement = document.getElementById("lastModified");
+const courseDetails = document.querySelector("#course-details");
+
 
 // Current year and last update
 const currentYear = new Date().getFullYear();
@@ -40,17 +42,29 @@ function displayCourses(filter = 'All') {
         }
 
         courseElement.innerHTML = `
-            <h5>${course.subject} ${course.number}
+            <h5>${course.subject} ${course.number}<h5>
         `;
 
+        courseElement.addEventListener("click", () => {
+            displayCourseDetails(course);
+        });
+
         courseContainer.appendChild(courseElement);
+
+        
+        
     });
+
+    
 
     // Calculate total credits for the displayed
     const totalCredits = filteredCourses.reduce((acc, course) => acc + course.credits, 0);
     const creditsElement = document.createElement('p');
     creditsElement.textContent = `Total Credits: ${totalCredits}`;
     courseContainer.appendChild(creditsElement);
+
+
+
 }
 
 // Event listeners
@@ -60,4 +74,28 @@ document.getElementById('showWDD').addEventListener("click", () => displayCourse
 
 // Initial display of all courses
 displayCourses();
+
+
+function displayCourseDetails(course) {
+    courseDetails.innerHTML = '';
+    courseDetails.innerHTML = `
+    <button id="closeModal">❌</button>
+    <h2>${course.subject} ${course.number}</h2>
+    <h3>${course.title}</h3>
+    <p><strong>Credits</strong>: ${course.credits}</p>
+    <p><strong>Certificate</strong>: ${course.certificate}</p>
+    <p>${course.description}</p>
+    <p><strong>Technologies</strong>: ${course.technology.join(', ')}</p>
+  `;
+    courseDetails.showModal();
+
+    document.getElementById('closeModal').addEventListener('click', () => {
+        courseDetails.close();
+    });
+
+}
+
+
+
+
 

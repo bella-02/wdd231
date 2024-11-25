@@ -172,6 +172,48 @@ section h4 {
     border-radius: 5px;
 }
 
+/* Course Details */
+
+dialog {
+    border: none;
+    border-radius: 8px;
+    padding: 1.5rem;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 500px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+dialog h2 {
+    text-align: center;
+    background-color: #3B5768;
+    color: white;
+    padding: 20px;
+}
+
+dialog h2, dialog h3, dialog p {
+    margin-bottom: 20px;
+}
+
+::backdrop {
+    background-color: rgb(0 0 0 / 0.5);
+}
+
+dialog button  {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    background: white;
+    padding: 5px;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
 
 
 /* Footer */
