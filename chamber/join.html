@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Now Bella Hunt</title>
+    <meta name="description" content="Rexburg Chamber of Commerce Join Form">
+    <meta name="author" content="Bella Hunt">
+    <meta property="og:title" content="Chamber of Commerce Join Now Bella Hunt">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://bella-02.github.io/wdd231/chamber/images/logo.png">
+    <meta property="og:url" content="https://bella-02.github.io/wdd231/chamber/join.html">
+    <link rel="icon" href="favicon.png">
+    <link rel="stylesheet" href="styles/chamber.css">
+    <script type="module" src="scripts/join.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div id="title-container">
+            <img src="images/logo.png" alt="rexburg chamber of commerce logo">
+            <div id="title">
+                <h1>Rexburg</h1>
+                <span>Chamber of Commerce</span>
+            </div>
+        </div>
+    
+        <button class="menu-button">☰</button>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="directory.html">Directory</a>
+            <a href="join.html">Join</a>
+            <a href="#">Discover</a>
+        </nav>
+    </header>
+
+
+    <main id="join-main">
+
+        <form action="thankyou.html" method="get">
+            <h2 id="form-title">Join the Chamber</h2>
+    
+            <label>
+                First Name:
+                <input type="text" name="first_name" title="Enter your first name" autocomplete="given-name" required>
+            </label>
+
+            <label>
+                Last Name:
+                <input type="text" name="last_name" title="Enter your last name" autocomplete="family-name" required>
+            </label>
+
+            <label>
+                Title in Organization:
+                <input type="text" name="organization_title" title="Enter your title in the organization"
+                    autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}">
+            </label>
+
+            <label>
+                Email:
+                <input type="email" name="email" title="Enter your email" autocomplete="email"
+                    placeholder="johndoe@example.com" required>
+            </label>
+
+            <label>
+                Mobile Phone:
+                <input type="tel" name="mobile" title="Enter your mobile phone number" autocomplete="tel" placeholder="123-456-7891">
+            </label>
+
+            <label>
+                Organization Name:
+                <input type="text" name="organization_name" title="Enter your organization's name"
+                    autocomplete="organization" required>
+            </label>
+
+            <label>
+                Membership Level:
+                <select name="membership_level" required>
+                    <option value="NP">NP Membership (Free)</option>
+                    <option value="Bronze">Bronze Membership</option>
+                    <option value="Silver">Silver Membership</option>
+                    <option value="Gold">Gold Membership</option>
+                </select>
+            </label>
+
+            <label>
+                Organization Description:
+                <textarea name="organization_description" title="Describe your organization"></textarea>
+            </label>
+
+            <input type="hidden" name="timestamp" id="timestamp">
+
+            <button type="submit">Join Now</button>
+        </form>
+
+        <section class="membership-cards">
+            <div class="card">
+                <h3>NP Membership</h3>
+                <button data-dialog="np-dialog">Learn More</button>
+            </div>
+            <div class="card">
+                <h3>Bronze Membership</h3>
+                <button data-dialog="bronze-dialog">Learn More</button>
+            </div>
+            <div class="card">
+                <h3>Silver Membership</h3>
+                <button data-dialog="silver-dialog">Learn More</button>
+            </div>
+            <div class="card">
+                <h3>Gold Membership</h3>
+                <button data-dialog="gold-dialog">Learn More</button>
+            </div>
+        </section>
+
+
+        <dialog id="np-dialog">
+            <h3>NP Membership Benefits</h3>
+            <p>No cost. Access to basic resources and newsletters.</p>
+            <button data-close>Close</button>
+        </dialog>
+        <dialog id="bronze-dialog">
+            <h3>Bronze Membership Benefits</h3>
+            <p> Price: $25 per month.</p> 
+            <p>Includes training and access to networking events.</p>
+            <button data-close>Close</button>
+        </dialog>
+        <dialog id="silver-dialog">
+            <h3>Silver Membership Benefits</h3>
+            <p>Price: $50 per month</p>
+            <p>Includes all bronze level benefits, plus event discounts and featured ads.</p>
+            <button data-close>Close</button>
+        </dialog>
+        <dialog id="gold-dialog">
+            <h3>Gold Membership Benefits</h3>
+            <p>Price: $100 per month</p>
+            <p>Includes all previous benefits plus premium advertising.</p>
+            <button data-close>Close</button>
+        </dialog>
+    </main>
+
+    <footer>
+        <div class="chamber-info">
+            <p>Rexburg Chamber of Commerce</p>
+            <p>430 W 2nd S</p>
+            <p>Rexburg, ID 84330</p>
+            <p>info@rexburgcc.org</p>
+            <p>(208)356-5700</p>
+        </div>
+    
+        <div class="social-icons">
+            <a href="#"><img src="images/youtube-logo.svg" alt="youtube icon link"></a>
+            <a href="#"><img src="images/twitter-logo.png" alt="twitter icon link"></a>
+            <a href="#"><img src="images/in-logo.png" alt="in icon link"></a>
+        </div>
+    
+        <div class="personal-info">
+            <p>WDD231 Class Project</p>
+            <p>Bella Hunt</p>
+            <p>©2024 Rexburg Chamber of Commerce</p>
+            <p id="last-modified"></p>
+        </div>
+    </footer>
+</body>
+
+</html>

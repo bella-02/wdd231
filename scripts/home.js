@@ -11,6 +11,8 @@ const certificateSection = document.querySelector('.certificateSection');
 const currentYearElement = document.getElementById("currentYear");
 const lastModifiedElement = document.getElementById("lastModified");
 const courseDetails = document.querySelector("#course-details");
+const divElem = document.querySelector(".title");
+const htmlElem = document.querySelector(":root");
 
 
 // Current year and last update
@@ -71,6 +73,18 @@ function displayCourses(filter = 'All') {
 document.getElementById('showAll').addEventListener("click", () => displayCourses("All"));
 document.getElementById('showCSE').addEventListener("click", () => displayCourses("CSE"));
 document.getElementById('showWDD').addEventListener("click", () => displayCourses("WDD"));
+htmlElem.addEventListener("click", showHide);
+document.addEventListener("keydown", showHide);
+
+function showHide() {
+    if (divElem.classList[0] === "fade-in") {
+        divElem.classList.remove("fade-in");
+        divElem.classList.add("fade-out");
+    } else {
+        divElem.classList.remove("fade-out");
+        divElem.classList.add("fade-in");
+    }
+}
 
 // Initial display of all courses
 displayCourses();

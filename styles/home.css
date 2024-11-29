@@ -30,6 +30,39 @@ header {
     align-items: center;
 }
 
+.title.fade-in {
+    animation: fade-in 0.7s ease-in forwards;
+}
+
+title.fade-out {
+    animation: fade-out 0.7s ease-out forwards;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        display: none;
+    }
+
+    100% {
+        opacity: 1;
+        display: block;
+    }
+}
+
+@keyframes fade-out {
+    0% {
+        opacity: 1;
+        display: block;
+    }
+
+    100% {
+        opacity: 0;
+        display: none;
+    }
+}
+
+
 .myPhoto {
     width: 150px;
     height: 175px;
