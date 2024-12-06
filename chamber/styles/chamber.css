@@ -107,7 +107,7 @@ nav a:hover {
  #hero-msg h2,
  #hero-msg p {
      text-align: center;
-     color: white;
+     color: var(--accent1-color);
  }
 
 #hero-msg h2 {
@@ -654,9 +654,10 @@ dialog button:hover {
 
 .sidebar-content h2 {
     font-size: 2em;
-    color: white;
+    color: var(--accent1-color);
     background-color: #77AD86;
     border-radius: 5px;
+    padding: 10px;
 }
 
 @media (max-width: 700px) {
@@ -776,6 +777,6 @@ dialog button:hover {
     }
 
     #discover-main {
-        grid-template-columns: 1fr
+        grid-template-columns: 1fr;
     }
-};
+}
