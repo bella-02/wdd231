@@ -55,3 +55,35 @@ document.addEventListener('DOMContentLoaded', () => {
 document.querySelector(".menu-button").addEventListener("click", () => {
     document.querySelector("nav").classList.toggle("active");
 });
+
+// Function to calculate the time difference in days
+function calculateDaysDifference(lastVisit, currentVisit) {
+    const msInADay = 1000 * 60 * 60 * 24;
+    return Math.floor((currentVisit - lastVisit) / msInADay);
+}
+
+
+const currentDate = Date.now();
+
+
+const lastVisit = localStorage.getItem('lastVisit');
+const sidebar = document.getElementById('last-visited');
+
+if (!lastVisit) {
+    sidebar.textContent = "Welcome! Let us know if you have any questions.";
+} else {
+    const lastVisitDate = parseInt(lastVisit, 10);
+    const daysDifference = calculateDaysDifference(lastVisitDate, currentDate);
+
+    if (daysDifference === 0) {
+        sidebar.textContent = "Back so soon! Awesome!";
+    } else if (daysDifference === 1) {
+        sidebar.textContent = "You last visited 1 day ago.";
+    } else {
+        sidebar.textContent = `You last visited ${daysDifference} days ago.`;
+    }
+}
+
+
+localStorage.setItem('lastVisit', currentDate.toString());
+
