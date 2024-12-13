@@ -102,6 +102,9 @@ document.addEventListener('DOMContentLoaded', async () => {
         const searchQuery = document.getElementById('search-bar').value.toLowerCase(); 
         window.location.href = `search-results.html?query=${encodeURIComponent(searchQuery)}`; 
     } 
+
+    const lastModifiedElement = document.getElementById("last-modified");
+    lastModifiedElement.textContent = `Last Update: ${document.lastModified}`;
     
     // Add event listeners for search functionality 
     if (document.getElementById('search-bar') && document.getElementById('search-button')) { 
