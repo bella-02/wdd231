@@ -1,0 +1,348 @@
+{
+    "recipes": [
+        {
+            "id": 1,
+            "name": "Classic Chocolate Chip Cookies",
+            "description": "Soft and chewy cookies loaded with chocolate chips.",
+            "image": "images/chocolate-chip-cookies.jpg",
+            "ingredients": [
+                "1 cup unsalted butter",
+                "1 cup granulated sugar",
+                "1 cup brown sugar",
+                "2 large eggs",
+                "2 teaspoons vanilla extract",
+                "3 cups all-purpose flour",
+                "1 teaspoon baking soda",
+                "1/2 teaspoon salt",
+                "2 cups chocolate chips"
+            ],
+            "instructions": [
+                "Preheat oven to 350°F (175°C).",
+                "Cream together butter and sugars until light and fluffy.",
+                "Add eggs and vanilla extract; mix well.",
+                "In a separate bowl, combine flour, baking soda, and salt.",
+                "Gradually add dry ingredients to the wet mixture.",
+                "Fold in chocolate chips.",
+                "Drop by rounded spoonfuls onto ungreased baking sheets.",
+                "Bake for 8-10 minutes or until edges are lightly browned."
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Brownie Bites",
+            "description": "Fudgy and rich chocolate brownie bites.",
+            "image": "images/brownie-bite.jpg",
+            "ingredients": [
+                "1/2 cup unsalted butter",
+                "1 cup sugar",
+                "2 large eggs",
+                "1/3 cup cocoa powder",
+                "1/2 cup flour",
+                "1/4 teaspoon salt",
+                "1/4 teaspoon baking powder"
+            ],
+            "instructions": [
+                "Preheat oven to 350°F (175°C).",
+                "Melt butter and stir in sugar, eggs, and cocoa powder.",
+                "Mix in flour, salt, and baking powder until smooth.",
+                "Pour batter into a greased mini-muffin tin.",
+                "Bake for 10-12 minutes or until a toothpick comes out clean."
+            ]
+        },
+        {
+            "id": 3,
+            "name": "Vanilla Cupcakes",
+            "description": "Fluffy vanilla cupcakes with buttercream frosting.",
+            "image": "images/vanilla-cupcakes.jpg",
+            "ingredients": [
+                "1/2 cup unsalted butter",
+                "1 cup sugar",
+                "2 large eggs",
+                "1 teaspoon vanilla extract",
+                "1 1/2 cups flour",
+                "1 3/4 teaspoons baking powder",
+                "1/2 cup milk"
+            ],
+            "instructions": [
+                "Preheat oven to 350°F (175°C).",
+                "Cream butter and sugar until light and fluffy.",
+                "Add eggs and vanilla, mixing well.",
+                "Combine dry ingredients and add to the wet mixture alternately with milk.",
+                "Scoop batter into cupcake liners and bake for 20-25 minutes."
+            ]
+        },
+        {
+            "id": 4,
+            "name": "Tiramisu",
+            "description": "A classic Italian dessert with layers of coffee-soaked ladyfingers and mascarpone cheese.",
+            "image": "images/tiramisu.jpg",
+            "ingredients": [
+                "6 egg yolks",
+                "3/4 cup sugar",
+                "1 cup mascarpone cheese",
+                "1 1/2 cups heavy cream",
+                "2 cups brewed coffee",
+                "1 package ladyfingers",
+                "Cocoa powder for dusting"
+            ],
+            "instructions": [
+                "Whisk egg yolks and sugar until thick and pale.",
+                "Fold in mascarpone cheese and whipped heavy cream.",
+                "Dip ladyfingers into coffee and layer in a dish.",
+                "Spread mascarpone mixture over each layer and dust with cocoa powder.",
+                "Chill for at least 4 hours before serving."
+            ]
+        },
+        {
+            "id": 5,
+            "name": "Lemon Bars",
+            "description": "Tangy and sweet lemon bars with a buttery crust.",
+            "image": "images/lemon-bars.jpg",
+            "ingredients": [
+                "1 cup unsalted butter",
+                "2 cups flour",
+                "1/2 cup powdered sugar",
+                "4 large eggs",
+                "2 cups sugar",
+                "1/3 cup lemon juice",
+                "1/4 cup flour",
+                "1/2 teaspoon baking powder"
+            ],
+            "instructions": [
+                "Preheat oven to 350°F (175°C).",
+                "Mix butter, flour, and powdered sugar to form the crust.",
+                "Press into a baking dish and bake for 15 minutes.",
+                "Whisk together eggs, sugar, lemon juice, flour, and baking powder.",
+                "Pour over the crust and bake for an additional 20 minutes.",
+                "Cool before cutting into squares."
+            ]
+        },
+        {
+            "id": 6,
+            "name": "Cheesecake",
+            "description": "Creamy and rich classic cheesecake.",
+            "image": "images/cheesecake.jpg",
+            "ingredients": [
+                "1 1/2 cups graham cracker crumbs",
+                "1/4 cup sugar",
+                "1/3 cup melted butter",
+                "4 packages cream cheese (8 oz each)",
+                "1 cup sugar",
+                "4 large eggs",
+                "1 teaspoon vanilla extract"
+            ],
+            "instructions": [
+                "Preheat oven to 325°F (160°C).",
+                "Mix graham cracker crumbs, sugar, and melted butter; press into a springform pan.",
+                "Beat cream cheese and sugar until smooth.",
+                "Add eggs one at a time, mixing well after each addition.",
+                "Stir in vanilla extract and pour over the crust.",
+                "Bake for 50-60 minutes or until the center is set.",
+                "Cool and refrigerate for at least 4 hours before serving."
+            ]
+        },
+        {
+            "id": 7,
+            "name": "Chocolate Mousse",
+            "description": "Light and airy chocolate mousse dessert.",
+            "image": "images/chocolate-mousse.jpg",
+            "ingredients": [
+                "200g dark chocolate",
+                "3 large eggs",
+                "1/4 cup sugar",
+                "1 cup heavy cream"
+            ],
+            "instructions": [
+                "Melt dark chocolate and let it cool slightly.",
+                "Separate eggs; whisk yolks with sugar until creamy.",
+                "Fold chocolate into the yolk mixture.",
+                "Whip heavy cream until stiff peaks form and fold into the chocolate mixture.",
+                "Beat egg whites until stiff and fold in gently.",
+                "Chill for at least 2 hours before serving."
+            ]
+        },
+        {
+            "id": 8,
+            "name": "Banana Bread",
+            "description": "Moist and flavorful banana bread.",
+            "image": "images/banana-bread.jpg",
+            "ingredients": [
+                "3 ripe bananas",
+                "1/3 cup melted butter",
+                "1 teaspoon baking soda",
+                "Pinch of salt",
+                "3/4 cup sugar",
+                "1 large egg",
+                "1 teaspoon vanilla extract",
+                "1 1/2 cups flour"
+            ],
+            "instructions": [
+                "Preheat oven to 350°F (175°C).",
+                "Mash bananas and mix with melted butter.",
+                "Add baking soda, salt, sugar, egg, and vanilla; mix well.",
+                "Stir in flour until just combined.",
+                "Pour into a greased loaf pan and bake for 60-65 minutes.",
+                "Cool before slicing."
+            ]
+        },
+        {
+            "id": 9,
+            "name": "Peach Cobbler",
+            "description": "Warm peach cobbler with a buttery crust.",
+            "image": "images/peach-cobbler.jpg",
+            "ingredients": [
+                "4 cups sliced peaches",
+                "1 cup sugar",
+                "1/4 cup butter",
+                "1 cup flour",
+                "1 teaspoon baking powder",
+                "1/4 teaspoon salt",
+                "1 cup milk"
+            ],
+            "instructions": [
+                "Preheat oven to 375°F (190°C).",
+                "Melt butter in a baking dish.",
+                "Mix sugar, flour, baking powder, and salt; add milk and stir until smooth.",
+                "Pour batter over melted butter.",
+                "Arrange peach slices over the batter and sprinkle with sugar.",
+                "Bake for 40-45 minutes or until golden brown."
+            ]
+        },
+        {
+            "id": 10,
+            "name": "Red Velvet Cake",
+            "description": "Rich red velvet cake with cream cheese frosting.",
+            "image": "images/red-velvet-cake.jpg",
+            "ingredients": [
+                "2 1/2 cups flour",
+                "1 1/2 cups sugar",
+                "1 teaspoon baking soda",
+                "1 teaspoon cocoa powder",
+                "1 teaspoon salt",
+                "2 large eggs",
+                "1 1/2 cups vegetable oil",
+                "1 cup buttermilk",
+                "2 tablespoons red food coloring",
+                "1 teaspoon vanilla extract",
+                "1 teaspoon white vinegar"
+            ],
+            "instructions": [
+                "Preheat oven to 350°F (175°C).",
+                "Mix dry ingredients in one bowl and wet ingredients in another.",
+                "Combine wet and dry ingredients until smooth.",
+                "Pour batter into greased cake pans and bake for 30-35 minutes.",
+                "Cool and frost with cream cheese frosting."
+            ]
+        },
+        {
+            "id": 11,
+            "name": "Strawberry Shortcake",
+            "description": "Layers of biscuits, strawberries, and whipped cream.",
+            "image": "images/strawberry-shortcake.jpg",
+            "ingredients": [
+                "2 cups flour",
+                "1/4 cup sugar",
+                "1 tablespoon baking powder",
+                "1/2 teaspoon salt",
+                "1/2 cup butter",
+                "2/3 cup milk",
+                "4 cups sliced strawberries",
+                "1/4 cup sugar",
+                "1 cup whipped cream"
+            ],
+            "instructions": [
+                "Preheat oven to 425°F (220°C).",
+                "Mix flour, sugar, baking powder, and salt.",
+                "Cut in butter until crumbly; add milk to form a dough.",
+                "Drop by spoonfuls onto a baking sheet and bake for 12-15 minutes.",
+                "Mix strawberries with sugar and layer with biscuits and whipped cream."
+            ]
+        },
+        {
+            "id": 12,
+            "name": "Creme Brulee",
+            "description": "Creamy custard with a caramelized sugar top.",
+            "image": "images/creme-brulee.jpg",
+            "ingredients": [
+                "2 cups heavy cream",
+                "1 vanilla bean",
+                "5 large egg yolks",
+                "1/2 cup sugar",
+                "Extra sugar for topping"
+            ],
+            "instructions": [
+                "Preheat oven to 325°F (160°C).",
+                "Heat cream and vanilla until just simmering.",
+                "Whisk egg yolks and sugar, then slowly add cream.",
+                "Pour into ramekins and bake in a water bath for 30-40 minutes.",
+                "Cool, then sprinkle sugar on top and caramelize with a torch."
+            ]
+        },
+        {
+            "id": 13,
+            "name": "Pumpkin Pie",
+            "description": "Classic spiced pumpkin pie with a flaky crust.",
+            "image": "images/pumpkin-pie.jpg",
+            "ingredients": [
+                "1 pie crust",
+                "1 can pumpkin puree",
+                "3/4 cup sugar",
+                "1/2 teaspoon salt",
+                "1 teaspoon cinnamon",
+                "1/2 teaspoon ginger",
+                "1/4 teaspoon cloves",
+                "2 large eggs",
+                "1 can evaporated milk"
+            ],
+            "instructions": [
+                "Preheat oven to 425°F (220°C).",
+                "Mix pumpkin, sugar, salt, and spices.",
+                "Add eggs and evaporated milk, mixing until smooth.",
+                "Pour into pie crust and bake for 15 minutes.",
+                "Reduce temperature to 350°F (175°C) and bake for 40-50 minutes."
+            ]
+        },
+        {
+            "id": 14,
+            "name": "Apple Crisp",
+            "description": "Warm apple crisp with a crumbly oat topping.",
+            "image": "images/apple-crisp.jpg",
+            "ingredients": [
+                "6 cups sliced apples",
+                "3/4 cup sugar",
+                "1/2 teaspoon cinnamon",
+                "1/2 teaspoon nutmeg",
+                "1 cup oats",
+                "1/2 cup flour",
+                "1/2 cup brown sugar",
+                "1/2 cup butter"
+            ],
+            "instructions": [
+                "Preheat oven to 375°F (190°C).",
+                "Mix apples with sugar, cinnamon, and nutmeg; spread in a baking dish.",
+                "Combine oats, flour, brown sugar, and butter to form crumbs.",
+                "Sprinkle topping over apples and bake for 40-45 minutes."
+            ]
+        },
+        {
+            "id": 15,
+            "name": "Panna Cotta",
+            "description": "Silky smooth cream dessert topped with fruit sauce.",
+            "image": "images/panna-cotta.jpg",
+            "ingredients": [
+                "2 cups heavy cream",
+                "1/2 cup sugar",
+                "1 teaspoon vanilla extract",
+                "1 packet gelatin",
+                "1/4 cup water",
+                "Fruit sauce for topping"
+            ],
+            "instructions": [
+                "Heat cream and sugar until sugar dissolves.",
+                "Dissolve gelatin in water and mix into cream mixture.",
+                "Stir in vanilla and pour into molds.",
+                "Chill for 4 hours and serve with fruit sauce."
+            ]
+        }
+    ]
+}
