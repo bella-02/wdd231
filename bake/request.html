@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Request</title>
+    <meta name="description" content="Bella Bakes recipe request page">
+    <meta name="author" content="Bella Hunt">
+    <meta property="og:title" content="Bella Bakes Recipe Request">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://bella-02.github.io/wdd231/bake/images/bake-logo.png">
+    <meta property="og:url" content="https://bella-02.github.io/wdd231/bake/request.html">
+    <link rel="icon" href="favicon.png">
+    <link rel="stylesheet" href="styles/bake.css">
+    <script type="module" src="scripts/bake.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="centered-container">
+            <img id="logo" src="images/bake-logo.png" alt="baking by bella logo">
+        </div>
+    
+        <button class="menu-button">☰</button>
+    
+        <nav>
+            <div id="search-container">
+                <input type="text" id="search-bar" placeholder="Find a recipe" />
+                <button id="search-button" type="button">
+                    <img id="search-img" src="images/search.png" alt="search button">
+                </button>
+            </div>
+            <a href="index.html">Home</a>
+            <a href="browse.html">Browse Recipes</a>
+            <a href="request.html" class="active-page">Recipe Request</a>
+        </nav>
+    </header>
+
+
+    <main id="request-main">
+
+        <form action="thanks.html" method="get">
+            <h2 id="form-title">Recipe Request</h2>
+
+            <label>
+                First Name:
+                <input type="text" name="first_name" title="Enter your first name" autocomplete="given-name" required>
+            </label>
+
+            <label>
+                Last Name:
+                <input type="text" name="last_name" title="Enter your last name" autocomplete="family-name" required>
+            </label>
+
+            <label>
+                Requested Recipe:
+                <input type="text" name="requested-recipe" title="Enter the name of your requested recipe"
+                    autocomplete="requested-recipe">
+            </label>
+
+            <label>
+                Additional Details:
+                <textarea name="recipe-details" title="Any extra details you want to include about the recipe"></textarea>
+            </label>
+
+            <label>
+                Email:
+                <input type="email" name="email" title="Enter your email" autocomplete="email"
+                    placeholder="johndoe@example.com" required>
+            </label>
+
+            <label>
+                Do you want to subscribe to promotional emails from Bella Bakes?
+                <select name="email-subscription" required>
+                    <option value="Select" disabled>Select</option>
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
+            </label>
+
+            <input type="hidden" name="timestamp" id="timestamp">
+
+            <button type="submit">Request</button>
+        </form>
+    </main>
+
+    <footer>
+        <div class="personal-info">
+            <p>WDD231 Class Project</p>
+            <p>Bella Hunt</p>
+            <p>©2024 Bella Bakes</p>
+            <p id="last-modified"></p>
+        </div>
+    
+        <div id="socials">
+            <img src="images/in-logo.png" alt="indeed logo">
+            <img src="images/twitter-logo.png" alt="twitter logo">
+            <img src="images/youtube-logo.svg" alt="youtube logo">
+        </div>
+    </footer>
+</body>
+
+</html>
+</html>

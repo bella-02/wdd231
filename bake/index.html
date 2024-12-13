@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bella Bakes Homepage</title>
+    <meta name="description" content="Bella Bakes Homepage">
+    <meta name="author" content="Bella Hunt">
+    <meta property="og:title" content="Bella Bakes Homepage">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://bella-02.github.io/wdd231/bake/images/bake-logo.png">
+    <meta property="og:url" content="https://bella-02.github.io/wdd231/bake/index.html">
+    <link rel="icon" href="favicon.png">
+    <link rel="stylesheet" href="styles/bake.css">
+    <script type="module" src="scripts/bake.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="centered-container">
+            <img id="logo" src="images/bake-logo.png" alt="baking by bella logo">
+        </div>
+
+        <button class="menu-button">☰</button>
+
+        <nav>
+            <div id="search-container">
+                <input type="text" id="search-bar" placeholder="Find a recipe" />
+                <button id="search-button" type="button">
+                    <img id="search-img" src="images/search.png" alt="search button">
+                </button>
+            </div>
+            <a href="index.html" class="active-page">Home</a>
+            <a href="browse.html">Browse Recipes</a>
+            <a href="request.html">Recipe Request</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="intro">
+            <div id="intro-grid">
+                <img class="intro-img" src="images/cookies1.jpg" alt="picture of pan of cookies1">
+                <img class="intro-img" src="images/cookies2.jpg" alt="cookies cooling">
+                <img class="intro-img" src="images/pie.jpg" alt="apple pie">
+                <img class="intro-img" src="images/cookies3.jpg" alt="cookie dough">
+            </div>
+
+            <div id="intro-text">
+                <h1>Thanks for Visiting!</h1>
+                <p>Hi, I'm Bella! I created this site to share my favorite baking recipes with everyone. I hope that you can find recipes here that will become beloved in your own life. Have a recipe in mind that isn't found here? No problem! Fill out the recipe request form and I will try to create one!</p>
+                <button id="request-button">Recipe Request</button>
+            </div>
+        </section>
+
+        <section id="popular">
+            <h2>Most Popular Recipes</h2>
+            <div id="homepage-recipes">
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="personal-info">
+            <p>WDD231 Class Project</p>
+            <p>Bella Hunt</p>
+            <p>©2024 Bella Bakes</p>
+            <p id="last-modified"></p>
+        </div>
+
+        <div id="socials">
+            <img src="images/in-logo.png" alt="indeed logo">
+            <img src="images/twitter-logo.png" alt="twitter logo">
+            <img src="images/youtube-logo.svg" alt="youtube logo">
+        </div>
+    </footer>
+        
+</body>
+</html>
